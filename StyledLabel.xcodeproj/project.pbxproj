@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5BB0EFED1D7AA4F60072C46F /* StyledLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB0EFEC1D7AA4F60072C46F /* StyledLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67237C14EF5A61AA2F917168 /* Pods_StyledLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58071A1A8E1EFA09E106395E /* Pods_StyledLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E60197DD4F34B39AEB07864 /* Pods-StyledLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyledLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StyledLabel/Pods-StyledLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		506090F7216288ED606A6D6C /* Pods-StyledLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyledLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-StyledLabel/Pods-StyledLabel.release.xcconfig"; sourceTree = "<group>"; };
+		58071A1A8E1EFA09E106395E /* Pods_StyledLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StyledLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB0EFE91D7AA4F60072C46F /* StyledLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyledLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB0EFEC1D7AA4F60072C46F /* StyledLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyledLabel.h; sourceTree = "<group>"; };
 		5BB0EFEE1D7AA4F60072C46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67237C14EF5A61AA2F917168 /* Pods_StyledLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +37,8 @@
 			children = (
 				5BB0EFEB1D7AA4F60072C46F /* StyledLabel */,
 				5BB0EFEA1D7AA4F60072C46F /* Products */,
+				CD4161A76E1D1FCEDDDBC686 /* Pods */,
+				A628D735DAAB89CFAA92DAB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +59,23 @@
 			path = StyledLabel;
 			sourceTree = "<group>";
 		};
+		A628D735DAAB89CFAA92DAB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58071A1A8E1EFA09E106395E /* Pods_StyledLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4161A76E1D1FCEDDDBC686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E60197DD4F34B39AEB07864 /* Pods-StyledLabel.debug.xcconfig */,
+				506090F7216288ED606A6D6C /* Pods-StyledLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,10 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB0EFF11D7AA4F60072C46F /* Build configuration list for PBXNativeTarget "StyledLabel" */;
 			buildPhases = (
+				BB73F2D11E5D41752DE8BFAF /* [CP] Check Pods Manifest.lock */,
 				5BB0EFE41D7AA4F60072C46F /* Sources */,
 				5BB0EFE51D7AA4F60072C46F /* Frameworks */,
 				5BB0EFE61D7AA4F60072C46F /* Headers */,
 				5BB0EFE71D7AA4F60072C46F /* Resources */,
+				730DFA1D105C01D03211EEE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +150,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		730DFA1D105C01D03211EEE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StyledLabel/Pods-StyledLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB73F2D11E5D41752DE8BFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BB0EFE41D7AA4F60072C46F /* Sources */ = {
@@ -229,6 +288,7 @@
 		};
 		5BB0EFF21D7AA4F60072C46F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E60197DD4F34B39AEB07864 /* Pods-StyledLabel.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -245,6 +305,7 @@
 		};
 		5BB0EFF31D7AA4F60072C46F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506090F7216288ED606A6D6C /* Pods-StyledLabel.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -278,6 +339,7 @@
 				5BB0EFF31D7AA4F60072C46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
