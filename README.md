@@ -9,6 +9,7 @@ StyledLabel is a UILabel with styling options.
     label.text          	= “The label“
     label.style         	= .Rounded
     label.backgroundColor 	= UIColor.blueColor()
+```
 
 # Installation
 
