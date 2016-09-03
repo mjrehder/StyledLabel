@@ -31,7 +31,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, ‘9.0’
 
 use_frameworks!
-pod ‘StyledLabel’, '~> 1.0’
+pod ‘StyledLabel’, '~> 1.0.1’
 ```
 
 Install into your project:
