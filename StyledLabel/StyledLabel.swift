@@ -48,6 +48,12 @@ public class StyledLabel: UIView {
         }
     }
     
+    public var attributedText: NSAttributedString? {
+        didSet {
+            label.attributedText = attributedText
+        }
+    }
+    
     public var textColor: UIColor = .blackColor() {
         didSet {
             label.textColor = textColor
