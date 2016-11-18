@@ -31,38 +31,38 @@
 import UIKit
 
 /// The `StyledLabel` object is an `UILabel` with a custom shape.
-public class StyledLabel: UIView {
+open class StyledLabel: UIView {
     var label                = UILabel()
-    var styleColor: UIColor? = UIColor.clearColor()
+    var styleColor: UIColor? = UIColor.clear
     var shapeLayer           = CAShapeLayer()
     
-    public var style: ShapeStyle = .Box {
+    open var style: ShapeStyle = .box {
         didSet {
             applyStyle()
         }
     }
     
-    public var text: String? {
+    open var text: String? {
         didSet {
             label.text = text
         }
     }
     
-    public var attributedText: NSAttributedString? {
+    open var attributedText: NSAttributedString? {
         didSet {
             label.attributedText = attributedText
         }
     }
     
-    public var textColor: UIColor = .blackColor() {
+    open var textColor: UIColor = .black {
         didSet {
             label.textColor = textColor
         }
     }
     
-    public override var backgroundColor: UIColor? {
+    open override var backgroundColor: UIColor? {
         get {
-            return .clearColor()
+            return .clear
         }
         set {
             styleColor = newValue
@@ -71,38 +71,38 @@ public class StyledLabel: UIView {
         }
     }
     
-    public var borderColor: UIColor? {
+    open var borderColor: UIColor? {
         didSet {
             applyStyle()
         }
     }
     
-    public var borderWidth: CGFloat = 1.0 {
+    open var borderWidth: CGFloat = 1.0 {
         didSet {
             applyStyle()
         }
     }
     
-    public var font: UIFont? {
+    open var font: UIFont? {
         didSet {
             label.font = font
         }
     }
     
-    public var textAlignment: NSTextAlignment = .Center {
+    open var textAlignment: NSTextAlignment = .center {
         didSet {
             label.textAlignment = textAlignment
         }
     }
     
-    public var rotationInRadians: CGFloat = 0 {
+    open var rotationInRadians: CGFloat = 0 {
         didSet {
             self.setNeedsLayout()
         }
     }
     
     public init() {
-        super.init(frame: CGRectZero)
+        super.init(frame: CGRect.zero)
         self.layer.addSublayer(self.shapeLayer)
     }
     
@@ -110,20 +110,20 @@ public class StyledLabel: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         self.applyStyle()
         label.removeFromSuperview()
         
         self.label.frame = bounds
-        self.label.transform = CGAffineTransformMakeRotation(self.rotationInRadians)
+        self.label.transform = CGAffineTransform(rotationAngle: self.rotationInRadians)
         self.label.frame = bounds
         self.addSubview(label)
     }
     
     func applyStyle() {
-        let bgColor = styleColor ?? .clearColor()
+        let bgColor = styleColor ?? .clear
         let sLayer: CAShapeLayer
         
         if let borderColor = borderColor {
