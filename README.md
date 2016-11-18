@@ -5,10 +5,10 @@ StyledLabel is a UILabel with styling options.
 
 ```swift
     let label           	= StyledLabel()
-    label.textAlignment 	= .Center
+    label.textAlignment 	= .center
     label.text          	= “The label“
-    label.style         	= .Rounded
-    label.backgroundColor 	= UIColor.blueColor()
+    label.style         	= .rounded
+    label.backgroundColor 	= UIColor.blue
 ```
 
 # Installation
@@ -28,10 +28,10 @@ $ cd /path/to/MyProject
 $ touch Podfile
 $ edit Podfile
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, ‘9.0’
+platform :ios, ‘10.0’
 
 use_frameworks!
-pod ‘StyledLabel’, '~> 1.0.1’
+pod ‘StyledLabel’
 ```
 
 Install into your project:
