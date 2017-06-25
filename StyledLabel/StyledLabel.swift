@@ -42,6 +42,13 @@ open class StyledLabel: UIView {
         }
     }
     
+    /// The label bounds is the rect in which the label is filled into. `self.bounds` is used when not set. Default is nil.
+    open var labelBounds: CGRect? = nil {
+        didSet {
+            applyStyle()
+        }
+    }
+    
     open var text: String? {
         didSet {
             label.text = text
@@ -116,9 +123,9 @@ open class StyledLabel: UIView {
         self.applyStyle()
         label.removeFromSuperview()
         
-        self.label.frame = bounds
+        self.label.frame = self.labelBounds ?? bounds
         self.label.transform = CGAffineTransform(rotationAngle: self.rotationInRadians)
-        self.label.frame = bounds
+        self.label.frame = self.labelBounds ?? bounds
         self.addSubview(label)
     }
     
