@@ -55,12 +55,6 @@ open class StyledLabel: UIView {
         }
     }
     
-    open var numberOfLines: Int = 1 {
-        didSet {
-            label.numberOfLines = self.numberOfLines
-        }
-    }
-    
     open var attributedText: NSAttributedString? {
         didSet {
             label.attributedText = attributedText
