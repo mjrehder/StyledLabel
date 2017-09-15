@@ -11,18 +11,18 @@
 		5BB0EFF51D7AA7980072C46F /* StyledLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF41D7AA7980072C46F /* StyledLabel.swift */; };
 		5BB0EFF71D7AA7D40072C46F /* ShapeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF61D7AA7D40072C46F /* ShapeStyle.swift */; };
 		5BB0EFF91D7AA8480072C46F /* StyledShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF81D7AA8480072C46F /* StyledShapeLayer.swift */; };
-		5BE4F72A1F6C128E00C9B912 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7291F6C128E00C9B912 /* CALayerExtension.swift */; };
 		5BE4F72C1F6C178400C9B912 /* StyledShapeLayerBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F72B1F6C178400C9B912 /* StyledShapeLayerBorder.swift */; };
 		5BE4F7341F6C1A6500C9B912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7331F6C1A6500C9B912 /* AppDelegate.swift */; };
 		5BE4F7361F6C1A6500C9B912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7351F6C1A6500C9B912 /* ViewController.swift */; };
 		5BE4F7391F6C1A6500C9B912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4F7371F6C1A6500C9B912 /* Main.storyboard */; };
 		5BE4F73B1F6C1A6500C9B912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4F73A1F6C1A6500C9B912 /* Assets.xcassets */; };
 		5BE4F73E1F6C1A6500C9B912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4F73C1F6C1A6500C9B912 /* LaunchScreen.storyboard */; };
-		5BE4F7431F6C1A9E00C9B912 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7291F6C128E00C9B912 /* CALayerExtension.swift */; };
 		5BE4F7441F6C1AAF00C9B912 /* StyledShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF81D7AA8480072C46F /* StyledShapeLayer.swift */; };
 		5BE4F7451F6C1AB200C9B912 /* StyledShapeLayerBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F72B1F6C178400C9B912 /* StyledShapeLayerBorder.swift */; };
 		5BE4F7461F6C1AB500C9B912 /* ShapeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF61D7AA7D40072C46F /* ShapeStyle.swift */; };
 		5BE4F7471F6C1AB800C9B912 /* StyledLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0EFF41D7AA7980072C46F /* StyledLabel.swift */; };
+		5BE4F7491F6C22EE00C9B912 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7481F6C22EE00C9B912 /* CALayerExtension.swift */; };
+		5BE4F74A1F6C22F900C9B912 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE4F7481F6C22EE00C9B912 /* CALayerExtension.swift */; };
 		67237C14EF5A61AA2F917168 /* Pods_StyledLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58071A1A8E1EFA09E106395E /* Pods_StyledLabel.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,6 @@
 		5BB0EFF41D7AA7980072C46F /* StyledLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledLabel.swift; sourceTree = "<group>"; };
 		5BB0EFF61D7AA7D40072C46F /* ShapeStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeStyle.swift; sourceTree = "<group>"; };
 		5BB0EFF81D7AA8480072C46F /* StyledShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledShapeLayer.swift; sourceTree = "<group>"; };
-		5BE4F7291F6C128E00C9B912 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		5BE4F72B1F6C178400C9B912 /* StyledShapeLayerBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledShapeLayerBorder.swift; sourceTree = "<group>"; };
 		5BE4F7311F6C1A6500C9B912 /* StyledLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyledLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE4F7331F6C1A6500C9B912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		5BE4F73A1F6C1A6500C9B912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE4F73D1F6C1A6500C9B912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE4F73F1F6C1A6500C9B912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE4F7481F6C22EE00C9B912 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = StyledLabel/CALayerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		5BE4F7281F6C126A00C9B912 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5BE4F7291F6C128E00C9B912 /* CALayerExtension.swift */,
+				5BE4F7481F6C22EE00C9B912 /* CALayerExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -289,8 +289,8 @@
 				5BB0EFF51D7AA7980072C46F /* StyledLabel.swift in Sources */,
 				5BE4F72C1F6C178400C9B912 /* StyledShapeLayerBorder.swift in Sources */,
 				5BB0EFF91D7AA8480072C46F /* StyledShapeLayer.swift in Sources */,
+				5BE4F7491F6C22EE00C9B912 /* CALayerExtension.swift in Sources */,
 				5BB0EFF71D7AA7D40072C46F /* ShapeStyle.swift in Sources */,
-				5BE4F72A1F6C128E00C9B912 /* CALayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +300,10 @@
 			files = (
 				5BE4F7441F6C1AAF00C9B912 /* StyledShapeLayer.swift in Sources */,
 				5BE4F7451F6C1AB200C9B912 /* StyledShapeLayerBorder.swift in Sources */,
-				5BE4F7431F6C1A9E00C9B912 /* CALayerExtension.swift in Sources */,
 				5BE4F7361F6C1A6500C9B912 /* ViewController.swift in Sources */,
 				5BE4F7341F6C1A6500C9B912 /* AppDelegate.swift in Sources */,
 				5BE4F7471F6C1AB800C9B912 /* StyledLabel.swift in Sources */,
+				5BE4F74A1F6C22F900C9B912 /* CALayerExtension.swift in Sources */,
 				5BE4F7461F6C1AB500C9B912 /* ShapeStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
