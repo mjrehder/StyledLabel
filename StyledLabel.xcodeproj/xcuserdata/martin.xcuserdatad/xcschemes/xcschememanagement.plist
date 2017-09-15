@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>StyledLabelDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5BB0EFE81D7AA4F60072C46F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BE4F7301F6C1A6500C9B912</key>
 		<dict>
 			<key>primary</key>
 			<true/>

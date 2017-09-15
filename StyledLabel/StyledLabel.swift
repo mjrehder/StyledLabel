@@ -32,7 +32,7 @@ import UIKit
 
 /// The `StyledLabel` object is an `UILabel` with a custom shape.
 open class StyledLabel: UIView {
-    var label                = UILabel()
+    open var label = UILabel()
     var styleColor: UIColor? = UIColor.clear
     var shapeLayer           = CAShapeLayer()
     
@@ -108,13 +108,20 @@ open class StyledLabel: UIView {
         }
     }
     
+    open var layerBorders: [StyledShapeLayerBorder] = [] {
+        didSet {
+            self.setNeedsLayout()
+        }
+    }
+    
     public init() {
         super.init(frame: CGRect.zero)
         self.layer.addSublayer(self.shapeLayer)
     }
     
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        self.layer.addSublayer(self.shapeLayer)
     }
     
     override open func layoutSubviews() {
@@ -129,7 +136,7 @@ open class StyledLabel: UIView {
         self.addSubview(label)
     }
     
-    func applyStyle() {
+    open func applyStyle() {
         let bgColor = styleColor ?? .clear
         let sLayer: CAShapeLayer
         
@@ -138,6 +145,12 @@ open class StyledLabel: UIView {
         }
         else {
             sLayer = StyledShapeLayer.createShape(style, bounds: bounds, color: bgColor)
+        }
+        
+        sLayer.frame = self.bounds
+        
+        for lBorder in self.layerBorders {
+            lBorder.apply(toLayer: sLayer)
         }
         
         if self.shapeLayer.superlayer != nil {
