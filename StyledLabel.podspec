@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StyledLabel'
-  s.version          = '5.0.1'
+  s.version          = '5.0.2'
   s.license          = 'MIT'
   s.summary          = 'StyledLabel is a UILabel with styling options'
   s.homepage         = 'https://github.com/mjrehder/StyledLabel.git'
