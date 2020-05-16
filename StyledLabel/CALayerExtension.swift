@@ -32,7 +32,7 @@ import UIKit
 
 public extension CALayer {
     
-    public func addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat, insets: UIEdgeInsets) {
+    func addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat, insets: UIEdgeInsets) {
         self.removeBorder(edge)
         
         let border = CALayer()
@@ -61,11 +61,11 @@ public extension CALayer {
         self.addSublayer(border)
     }
     
-    public func addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
+    func addBorder(_ edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
         self.addBorder(edge, color: color, thickness: thickness, insets: UIEdgeInsets.zero)
     }
     
-    public func removeBorder(_ edge: UIRectEdge? = nil) {
+    func removeBorder(_ edge: UIRectEdge? = nil) {
         if let sublayers = self.sublayers {
             var idx = 0
             for layer in sublayers {
