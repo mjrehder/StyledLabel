@@ -1,8 +1,6 @@
-platform :ios, '10.0'
+platform :ios, '12.1'
 
 target 'StyledLabel' do
   use_frameworks!
-
-  # Pods for StyledLabel
 
 end

@@ -31,7 +31,7 @@
 import UIKit
 
 /// Specifies the shape style of the snapping stepper.
-public enum ShapeStyle {
+public enum ShapeStyle: Equatable {
     /// No shape
     case none
     /// A box shape.
